@@ -19,7 +19,7 @@ class Bilibili:
 		r.encoding='utf-8'
 		try:
 
-			self.cid=re.findall(cidRegx, r.text)[]
+			self.cid=re.findall(cidRegx, r.text)[0]
 			self.aid=re.findall(aidRegx, r.text)[int(page)-1]
 		except:
 			print('视频序号输入有误，请保证序号在1到最大值之间！')
